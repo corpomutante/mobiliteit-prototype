@@ -1,0 +1,363 @@
+/* =============================================================
+   Mobiliteit Design System — Foundations
+   Type + Color tokens (light + dark)
+   ============================================================= */
+
+/* Manrope — licensed local files (see /fonts) */
+@font-face {
+  font-family: "Manrope";
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/Manrope-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/Manrope-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/Manrope-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/Manrope-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/Manrope-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/Manrope-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/Manrope-ExtraBold.ttf") format("truetype");
+}
+
+/* IBM Plex Mono — licensed local files (see /fonts) */
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 100; font-style: normal; font-display: swap;
+  src: url("fonts/IBMPlexMono-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 100; font-style: italic; font-display: swap;
+  src: url("fonts/IBMPlexMono-ThinItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 200; font-style: normal; font-display: swap;
+  src: url("fonts/IBMPlexMono-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 200; font-style: italic; font-display: swap;
+  src: url("fonts/IBMPlexMono-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 300; font-style: normal; font-display: swap;
+  src: url("fonts/IBMPlexMono-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 300; font-style: italic; font-display: swap;
+  src: url("fonts/IBMPlexMono-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 400; font-style: normal; font-display: swap;
+  src: url("fonts/IBMPlexMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 400; font-style: italic; font-display: swap;
+  src: url("fonts/IBMPlexMono-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 500; font-style: normal; font-display: swap;
+  src: url("fonts/IBMPlexMono-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 500; font-style: italic; font-display: swap;
+  src: url("fonts/IBMPlexMono-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 600; font-style: normal; font-display: swap;
+  src: url("fonts/IBMPlexMono-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 600; font-style: italic; font-display: swap;
+  src: url("fonts/IBMPlexMono-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 700; font-style: normal; font-display: swap;
+  src: url("fonts/IBMPlexMono-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono"; font-weight: 700; font-style: italic; font-display: swap;
+  src: url("fonts/IBMPlexMono-BoldItalic.ttf") format("truetype");
+}
+
+/* -------------------------------------------------------------
+   Type families
+   ------------------------------------------------------------- */
+:root {
+  --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Tabular numerals for transit times, route codes, schedules */
+  --font-feat-tnum: "tnum" 1, "cv11" 1;
+}
+
+/* -------------------------------------------------------------
+   Type scale (mobile-first — minor third, 1.2)
+   Base = 16px. iOS Dynamic Type compliant.
+   ------------------------------------------------------------- */
+:root {
+  --fs-display: 32px;   --lh-display: 38px;   --tr-display: -0.02em;
+  --fs-title-1: 26px;   --lh-title-1: 32px;   --tr-title-1: -0.015em;
+  --fs-title-2: 22px;   --lh-title-2: 28px;   --tr-title-2: -0.01em;
+  --fs-title-3: 18px;   --lh-title-3: 24px;   --tr-title-3: -0.005em;
+  --fs-body:    16px;   --lh-body:    24px;   --tr-body: 0;
+  --fs-callout: 15px;   --lh-callout: 22px;
+  --fs-sub:     14px;   --lh-sub:     20px;
+  --fs-caption: 13px;   --lh-caption: 18px;
+  --fs-micro:   11px;   --lh-micro:   14px;   --tr-micro: 0.04em;
+
+  /* Route / line badge — always mono, tabular */
+  --fs-route:   15px;   --lh-route:   20px;   --tr-route: -0.01em;
+
+  /* Weights */
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-extra:    800;
+}
+
+/* -------------------------------------------------------------
+   Color — Light (default)
+   Naming convention:
+     --fg-*    = text + foreground
+     --bg-*    = page / surface backgrounds
+     --bd-*    = borders + dividers
+     --ac-*    = brand accent
+     --st-*    = semantic status
+     --mode-*  = per-transport-mode color
+   ------------------------------------------------------------- */
+:root,
+:root[data-theme="light"] {
+  /* Brand — primary (magenta) */
+  --ac-primary:        #E5007E;  /* Mobiliteit magenta */
+  --ac-primary-hover:  #C70070;
+  --ac-primary-press:  #A30060;
+  --ac-on-primary:     #FFFFFF;
+  --ac-primary-soft:   #FDE6F2;  /* tinted bg */
+
+  /* Brand — secondary (complementary blue) */
+  --ac-secondary:        #5669FF;  /* Mobiliteit electric blue */
+  --ac-secondary-hover:  #4055EB;
+  --ac-secondary-press:  #3445D1;
+  --ac-on-secondary:     #FFFFFF;
+  --ac-secondary-soft:   #E8EBFF;
+
+  /* Foreground (text) */
+  --fg-1: #15161A;   /* primary text — near-black, warm */
+  --fg-2: #4A4D55;   /* secondary text — metadata, body sub */
+  --fg-3: #6B6E76;   /* tertiary — placeholder, captions */
+  --fg-4: #767A82;   /* quaternary — disabled glyphs */
+  --fg-on-dark: #FFFFFF;
+
+  /* Backgrounds */
+  --bg-canvas:    #F7F6F4;  /* page bg, warm off-white */
+  --bg-elevated:  #FFFFFF;  /* cards, sheets */
+  --bg-sunken:    #F1F3F4;  /* nested wells, search fields */
+  --bg-overlay:   rgba(20, 22, 26, 0.40);  /* modal scrim */
+  --bg-tint:      rgba(229, 0, 126, 0.06); /* brand tint */
+
+  /* Borders & dividers */
+  --bd-subtle:  #F1F3F4;
+  --bd-default: #D9D7D1;
+  --bd-strong:  #15161A;
+  --bd-focus:   #E5007E;
+
+  /* Status — calm, accessible */
+  --st-success-fg: #1F7A4E;
+  --st-success-bg: #E4F4EB;
+  --st-warning-fg: #C2410C;   /* delays — modern orange */
+  --st-warning-bg: #FFE7D1;
+  --st-danger-fg:  #B91C1C;   /* cancellations */
+  --st-danger-bg:  #FBE5E5;
+  --st-info-fg:    #1D4ED8;
+  --st-info-bg:    #E2EAFB;
+
+  /* Transport modes — chips, route badges, map lines */
+  --mode-train:    #1D4ED8;   /* CFL rail blue */
+  --mode-train-bg: #E2EAFB;
+  --mode-bus:      #007A66;   /* RGTR / TICE teal */
+  --mode-bus-bg:   #DCF0EA;
+  --mode-tram:     #C8146B;   /* Luxtram magenta */
+  --mode-tram-bg:  #FBE0EE;
+  --mode-bike:     #B8580B;   /* vel'OH amber */
+  --mode-bike-bg:  #FCEAD3;
+  --mode-walk:     #4A4D55;   /* neutral walking */
+  --mode-walk-bg:  #ECEAE4;
+  --mode-car:      #5B3FA8;   /* Klaxit / carpool */
+  --mode-car-bg:   #ECE4F8;
+  --mode-pr:       #36505C;   /* P+R, parking */
+  --mode-pr-bg:    #E1E8EC;
+  --mode-charge:   #1F7A4E;   /* EV charging */
+  --mode-charge-bg:#E4F4EB;
+
+  /* Elevation — single subtle system, no neumorphism */
+  --sh-0:  none;
+  --sh-1:  0 1px 2px rgba(20, 22, 26, 0.04), 0 0 0 1px rgba(20, 22, 26, 0.04);
+  --sh-2:  0 4px 12px rgba(20, 22, 26, 0.06), 0 0 0 1px rgba(20, 22, 26, 0.04);
+  --sh-3:  0 10px 28px rgba(20, 22, 26, 0.10), 0 0 0 1px rgba(20, 22, 26, 0.05);
+  --sh-sheet: 0 -8px 24px rgba(20, 22, 26, 0.08);
+
+  /* Radii */
+  --r-xs:  4px;
+  --r-sm:  8px;
+  --r-md:  12px;
+  --r-lg:  16px;
+  --r-xl:  20px;
+  --r-2xl: 28px;   /* bottom sheet */
+  --r-pill: 999px;
+
+  /* Spacing scale — 4px grid */
+  --s-1:   4px;
+  --s-2:   8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  20px;
+  --s-6:  24px;
+  --s-7:  32px;
+  --s-8:  40px;
+  --s-9:  48px;
+  --s-10: 64px;
+
+  /* Touch targets */
+  --hit-min: 44px;        /* WCAG / Apple HIG */
+  --hit-comfortable: 48px;
+
+  /* Inactive chip (mode-filter / unselected pill) */
+  --chip-inactive-bg: #DDE3EA;
+  --chip-inactive-fg: #2B3440;
+
+  /* Motion */
+  --ease-out:   cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in:    cubic-bezier(0.4, 0, 0.7, 0.2);
+  --ease-inout: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-1: 120ms;   /* press, hover */
+  --dur-2: 200ms;   /* small UI */
+  --dur-3: 320ms;   /* sheets, page transitions */
+  --dur-4: 480ms;   /* map fly-to */
+}
+
+/* -------------------------------------------------------------
+   Color — Dark
+   ------------------------------------------------------------- */
+[data-theme="dark"] {
+  --ac-primary:        #FF3FA0;
+  --ac-primary-hover:  #FF6BB6;
+  --ac-primary-press:  #C70070;
+  --ac-on-primary:     #15161A;
+  --ac-primary-soft:   #2A1422;
+
+  --ac-secondary:        #8895FF;
+  --ac-secondary-hover:  #ADB6FF;
+  --ac-secondary-press:  #5669FF;
+  --ac-on-secondary:     #0E0F12;
+  --ac-secondary-soft:   #1A1F3D;
+
+  --fg-1: #F4F2EE;
+  --fg-2: #C5C2BC;
+  --fg-3: #8D8E94;
+  --fg-4: #5C5E66;
+
+  --bg-canvas:   #0E0F12;
+  --bg-elevated: #1A1B1F;
+  --bg-sunken:   #16171B;
+  --bg-overlay:  rgba(0, 0, 0, 0.60);
+  --bg-tint:     rgba(255, 63, 160, 0.10);
+
+  --bd-subtle:  #24252A;
+  --bd-default: #34363C;
+  --bd-strong:  #F4F2EE;
+  --bd-focus:   #FF3FA0;
+
+  --st-success-fg: #6FCB9A;  --st-success-bg: #133324;
+  --st-warning-fg: #FFA663;  --st-warning-bg: #3A1F08;
+  --st-danger-fg:  #F08A8A;  --st-danger-bg:  #3A1818;
+  --st-info-fg:    #88A8FF;  --st-info-bg:    #15234A;
+
+  --mode-train:    #88A8FF;  --mode-train-bg: #15234A;
+  --mode-bus:      #5BC9B0;  --mode-bus-bg:   #103029;
+  --mode-tram:     #F08AC2;  --mode-tram-bg:  #361227;
+  --mode-bike:     #F5B461;  --mode-bike-bg:  #3A2810;
+  --mode-walk:     #C5C2BC;  --mode-walk-bg:  #25262B;
+  --mode-car:      #B49BE8;  --mode-car-bg:   #251A3F;
+  --mode-pr:       #97AAB4;  --mode-pr-bg:    #1C262C;
+  --mode-charge:   #6FCB9A;  --mode-charge-bg:#133324;
+
+  --sh-1:  0 1px 2px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04);
+  --sh-2:  0 4px 12px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.05);
+  --sh-3:  0 10px 28px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06);
+  --sh-sheet: 0 -8px 24px rgba(0,0,0,0.55);
+
+  --chip-inactive-bg: #262A30;
+  --chip-inactive-fg: #C5C2BC;
+}
+
+/* -------------------------------------------------------------
+   Semantic shortcuts (use these in components)
+   ------------------------------------------------------------- */
+:root {
+  /* Typography roles */
+  --t-display:  var(--fw-extra)    var(--fs-display)/var(--lh-display)  var(--font-sans);
+  --t-title-1:  var(--fw-bold)     var(--fs-title-1)/var(--lh-title-1)  var(--font-sans);
+  --t-title-2:  var(--fw-bold)     var(--fs-title-2)/var(--lh-title-2)  var(--font-sans);
+  --t-title-3:  var(--fw-semibold) var(--fs-title-3)/var(--lh-title-3)  var(--font-sans);
+  --t-body:     var(--fw-regular)  var(--fs-body)/var(--lh-body)        var(--font-sans);
+  --t-body-em:  var(--fw-semibold) var(--fs-body)/var(--lh-body)        var(--font-sans);
+  --t-sub:      var(--fw-regular)  var(--fs-sub)/var(--lh-sub)          var(--font-sans);
+  --t-sub-em:   var(--fw-semibold) var(--fs-sub)/var(--lh-sub)          var(--font-sans);
+  --t-caption:  var(--fw-medium)   var(--fs-caption)/var(--lh-caption)  var(--font-sans);
+  --t-micro:    var(--fw-semibold) var(--fs-micro)/var(--lh-micro)      var(--font-sans);
+  --t-route:    var(--fw-semibold) var(--fs-route)/var(--lh-route)      var(--font-mono);
+}
+
+/* Base text element styles */
+html { font-family: var(--font-sans); color: var(--fg-1); background: var(--bg-canvas); font-feature-settings: "ss01" 1; }
+body { margin: 0; font: var(--t-body); }
+h1   { font: var(--t-display);  letter-spacing: var(--tr-display);   margin: 0; }
+h2   { font: var(--t-title-1);  letter-spacing: var(--tr-title-1);   margin: 0; }
+h3   { font: var(--t-title-2);  letter-spacing: var(--tr-title-2);   margin: 0; }
+h4   { font: var(--t-title-3);  letter-spacing: var(--tr-title-3);   margin: 0; }
+p    { font: var(--t-body); margin: 0; color: var(--fg-1); }
+small{ font: var(--t-caption); color: var(--fg-3); }
+
+/* Reset focus to brand */
+*:focus-visible {
+  outline: 2px solid var(--bd-focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Numbers in transit context — always tabular */
+.tabular { font-variant-numeric: tabular-nums; font-feature-settings: var(--font-feat-tnum); }
